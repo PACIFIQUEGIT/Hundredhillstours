@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .nav-link{
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .dropdown-item{
+            font-weight: bold;
+        }
+        .nav-link:hover{
+            text-decoration: underline solid green;
+            color: black;
+        }
+        .dropdown-item:hover{
+            color: green;
+            background-color: white;
+        }
+        .nav-link.active{
+            text-decoration: underline solid green;
+            color: black;
+        }
+        .column{
+            float: left;
+            width: 22%;
+            overflow: auto;
+            height: 323px;
+            background-color: rgba(0, 0, 0, 0.4);
+            transition: .5s;
+        }
+        .coll{
+            height: 30px;
+            width: 20px;
+        }
+        #rw1:hover {
+            background-size: 300px 300px;
+            padding-top: 150px;
+            p {margin-top: 15px;}
+        }
+        #rw2:hover {
+            background-size: 300px 300px;
+            padding-top: 150px;
+            p {margin-top: 15px;}
+        }
+        #hotel:hover {
+            background-size: 300px 201px;
+            padding-top: 150px;
+            padding-bottom: 0px;
+            p {margin-top: 15px;margin-bottom: 0px;}
+        }
+        #rw1{
+        background-image: url(images/rwanda0f.png);background-size: 270px 250px;background-repeat: no-repeat;padding-top: 182px;
+        p{margin-top: 28px;transition: .5s;};
+        }
+        #rw2{
+        background-image: url(images/rwanda0f.png);background-size: 270px 250px;background-repeat: no-repeat;padding-top: 182px;
+        p{margin-top: 28px;transition: .5s;};
+        }
+        #hotel{
+            background-image: url(images/millecol.jpg);background-size: 274px 150px;background-repeat: no-repeat;padding-top: 182px;
+            p{margin-top: 28px;transition: .5s;};
+        }
+        #pc{
+            border-left: 1px solid blue;
+            border-right: 1px solid blue;
+            border-top: 1px solid rgba(0, 0, 0, 0.4);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            padding: 20px 20px;
+            border-radius: 5px;
+            padding-bottom: 35px;
+        }
+        .la{
+            text-decoration: none;
+            color: black;
+        }
+        .la:hover{ color: green;}
+        ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.la::before {
+    content: "\003E"; 
+    margin-right: 5px; 
+}
+.m-2:hover{
+    color: green;
+}
+#btn{
+    position: fixed;
+    z-index: 5;
+    bottom: 20px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    display: none;
+}
+.nav-link:active{
+    text-decoration: underline solid green;
+}
+    </style>
+</head>
+<body >
+    <div class="container-fluid px-0">
+      <div style="position:fixed;z-index: 1;box-shadow: 10px 5px 12px #888888;top: 0;" class="container-fluid px-0">
+        <div class="row bg-primary mx-0">
+            <div class="col-10 d-flex">
+                <div class="col-7"><p style="font-size: 35px;"><b><span class="text-warning">Hundred</span> <a style="text-decoration: none;" class="text-white" href="spinner.html">Hills Tours</a></b></p></div>
+                <div class="col-2 text-white"><p class="mt-4"> <i class='bx bxs-phone'></i> +250 788 310 781</p></div>
+                <div class="col-3 text-white text-center ps-5">
+                    <p class="mb-0 ps-3"><i class='bx bxs-envelope'></i></p> <p class="mt-0 border-start ps-3">info@hundredhillstours.com</p>
+                </div>
+            </div>
+            <div class="col text-center pt-2 border-start mb-3 pb-0">
+                <a href="bookherenow.html"><button class="btn btn-warning"><i class="fa fa-cog fa-spin" style="font-size:px"></i>  Book Here Now</button></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-xl bg-white pt-0">
+            <div class="container-fluid ps-5">
+                <div class="col-3"><img class="ms-5" src="images/tours3.png" width="102px" height="58px" alt=""></div>
+                                <div class="col ps-5">
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown ps-2"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Our Packages</a>
+                         <ul class="dropdown-menu ms-3">
+                            <li><a class="dropdown-item" href=""><img width="24px" height="23px" src="images/rw.png" alt="">In Rwanda</a></li>
+                            <li><a class="dropdown-item" href=""><img width="24px" height="23px" src="images/ug.png" alt="">In Uganda</a></li>
+                            <li><a class="dropdown-item" href=""><img width="24px" height="23px" src="images/tz.png" alt="">In Tanzania</a></li>
+                            <li><a class="dropdown-item" href=""><img width="24px" height="23px" src="images/ky.png" alt="">In Kenya</a></li>
+                            <li><a class="dropdown-item" href=""><img width="24px" height="23px" src="images/drc.png" alt="">In DRC</a></li>
+                         </ul>
+                    </li>
+                    <li class="nav-item ps-2"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item ps-2"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item ps-2"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+      </div>
+      <div style="padding-top: 85px ;" class="container-fluid mt-5 text-center px-5 ">
+        <div class="row mt-4">
+        <div class="col" style="position: relative;"><img class="" src="images/des.jpeg" height="350px" width="650px" alt="">
+        <div style="position: absolute;top: 0;left: 33px;width: 650px;height: 350px;"><h1 style="font-size: 30px;color: white;position: absolute;left: 50px;top: 50%;bottom: 50%;">Hundred Hills Tours with you all the time</h1></div>
+        </div>
+        <div class="text-start col-5 ">
+        <h3 class="text-center" style="font-size: 23px;">About our popular destinations</h3>
+        <p style="font-size: 18px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quibusdam vel incidunt itaque ullam quasi dicta, hic 
+            rem rerum, quaerat corporis error quod similique, 
+            dolorem officia maiores. Atque, placeat? Nemo, 
+            similique? Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Cumque commodi nisi totam quasi 
+            perspiciatis quo voluptatum quos impedit atque odit 
+            sunt perferendis reiciendis optio, illo ex odio inventore 
+            sit maxime? Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Fugiat odio dignissimos illo ducimus, a 
+            porro. Soluta repellendus, pariatur iste, totam placeat 
+            eius deserunt aliquam, est temporibus neque a fuga ipsum.</p>
+        </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div style="width: 1100px;" class="row mx-auto">
+            <img src="images/1.jpg" alt="">
+        </div>
+      </div>
+      <div class="container-fluid text-center mb-5 ">
+        <div class="row mx-auto justify-content-between mt-2" style="width: 1076px;">
+            <div class="col-2 px-0" style="width: 241px;">
+                <img width="240px" height="180px" src="images/2.jpg" alt="">
+                <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga repellendus veritatis illo maiores eos facere ea vero dolore soluta voluptate sed, aperiam quia perspiciatis modi quo est quasi possimus magni?</p>
+            </div>
+            <div class="col-2 px-0" style="width: 241px;">
+                <img width="240px" height="180px" src="images/3.jpg" alt=""> 
+                <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga repellendus veritatis illo maiores eos facere ea vero dolore soluta voluptate sed, aperiam quia perspiciatis modi quo est quasi possimus magni?</p>
+            </div>
+            <div class="col-2 px-0" style="width: 241px;">
+                <img width="240px" height="180px" src="images/4.jpeg" alt="">
+                <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga repellendus veritatis illo maiores eos facere ea vero dolore soluta voluptate sed, aperiam quia perspiciatis modi quo est quasi possimus magni?</p>
+            </div>
+            <div class="col-2 px-0" style="width: 241px;">
+                <img width="240px" height="180px" src="images/5.jpg" alt="">
+                <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga repellendus veritatis illo maiores eos facere ea vero dolore soluta voluptate sed, aperiam quia perspiciatis modi quo est quasi possimus magni?</p>
+            </div>
+        </div>
+      </div>
+         
+      <div style="background-color: gainsboro;" class="container-fluid pt-5 px-5 mt-5">
+        <div class="row">
+            <div class="col">
+                <h2><b>HundredHills</b></h2>
+                <p>Some text about the company here .... <br>
+                    Lorem ipsum, dolor sit amet consectetur <br>
+                     adipisicing elit. Autem soluta, aspernatur, <br>
+                     amet distinctio ipsum, eum tempora eius <br>
+                     cum corrupti id unde quod debitis offi</p>
+            </div>
+            <div class="col">
+                <h2><b>Quick Links</b></h2>
+                <ul>
+                    <li><a class="la" href=""><b>Home</b></a></li>
+                    <li><a class="la" href=""><b>Our Packages</b></a></li>
+                    <li><a class="la" href=""><b>Destinations</b></a></li>
+                    <li><a class="la" href=""><b>About Us</b></a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2><b>Find us</b></h2>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="row text-center mb-0">
+           <p class="mb-0 pb-0"> 
+            <span style="font-size: 20px;" class="m-2"><i class='bx bxl-facebook-circle'></i> </span>
+            <span style="font-size: 20px;" class="m-2"><i class='bx bxl-twitter'></i> </span>
+            <span style="font-size: 20px;" class="m-2"> <i class='bx bxl-instagram-alt' ></i> </span>
+            <span style="font-size: 20px;" class="m-2"> <i class='bx bxl-linkedin-square' ></i> </p></span>
+        </div>
+        <hr>
+        <div class="row text-center m-0 p-0">
+            <p class="m-0"><i class='bx bx-copyright' ></i> Copyright Hundredhills All Rights Reserved.</p>
+        </div>
+      </div>
+      <button id="btn" onclick="topbtn()" class="btn btn-success rounded-circle text-white"><i class='bx bx-up-arrow-alt'></i></button>
+    </div>
+
+
+<script>
+    const button = document.getElementById('btn');
+    window.onscroll = function() {showbtn()};
+    function showbtn() {
+        const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if(scrollTop > 50)
+            {button.style.display = 'block';} 
+            else {button.style.display = 'none';}
+        }
+    function topbtn() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
